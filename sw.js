@@ -1,5 +1,12 @@
 const CACHE_NAME = "kitaadmin-shell-v1";
-const ASSETS = ["/", "/index.html", "/styles.css", "/app.js", "/manifest.json", "/assets/icon.svg"];
+const ASSETS = [
+  "./",
+  "./index.html",
+  "./styles.css",
+  "./app.js",
+  "./manifest.json",
+  "./assets/icon.svg",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -41,7 +48,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
           return response;
         })
-        .catch(() => caches.match("/index.html"));
+        .catch(() => caches.match("./index.html"));
     })
   );
 });
