@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2f6fed" />
+    <title>KitaAdmin Pro – modulare Verwaltung</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-logo">KA</span>
+          <div>
+            <p class="brand-title">KitaAdmin Pro</p>
+            <p class="brand-subtitle">Einfach. Schnell. Modular.</p>
+          </div>
+        </div>
+        <nav class="topnav" id="topnav"></nav>
+        <div class="top-actions">
+          <button class="ghost">Demo-Daten laden</button>
+          <button class="primary">+ Schnellaktion</button>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h2 id="module-title">Start</h2>
+            <p class="muted">Kontext-Menü</p>
+          </div>
+          <div class="sidebar-content" id="context-menu"></div>
+        </aside>
+
+        <main class="main" id="main"></main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "KitaAdmin Pro",
+  "short_name": "KitaAdmin",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2f6fed",
+  "description": "Modulare Administrations-App für Kitas, Krippen, Horte und Tagesfamilien.",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
